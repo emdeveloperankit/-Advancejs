@@ -1,0 +1,27 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrow function</title>
+	</head>
+	<body>
+		<script>
+			//let hello = () => console.log('hello ankit');
+			//hello();
+			let greet = (name, age) => {
+				return `hello and welcome Ankit ${name} - ${age}`;
+			};
+			//console.log(greet());
+			console.log(greet('welcome Ankit bro', 45));
+			//for a short way
+			let welcome = (name, age) => `hello & welcome ${name}-${age}`;
+			console.log(welcome('Ankit kumar welcome', 34));
+			//for checking its type
+			console.log(typeof welcome);
+			//if parameter is single
+			const arr = (name) => `welcome and ${name}`;
+			console.log(arr('hii ankit kumar'));
+		</script>
+	</body>
+</html>

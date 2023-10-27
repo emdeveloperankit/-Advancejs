@@ -1,0 +1,27 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Async2 in js</title>
+	</head>
+	<body>
+		<h1></h1>
+		<button class="start">Start</button>
+		<button class="stop">Stop</button>
+		<script>
+			document.querySelector('h1').innerHTML = 'This is a async';
+			setInterval(function () {
+				console.log('Ankit', Date.now());
+			}, 2000);
+			const sayDate = function (str) {
+				console.log(str, Date.now());
+			};
+			// it run continueously
+			setInterval(sayDate, 1000, 'Hii Ankit');
+			//how stop this setInterval
+			const intervalId = setInterval(sayDate, 1000, 'wow');
+			clearInterval(intervalId);
+		</script>
+	</body>
+</html>

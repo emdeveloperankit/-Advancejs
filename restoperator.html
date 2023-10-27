@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rest operators</title>
+	</head>
+	<body>
+		<!--functions with multiple arguments  -->
+		<script>
+			//function sum(num1, num2) {
+			//console.log(num1 + num2);
+			//}
+			//sum(30,30,39,39) it can't add more number for resolving this we use here REST operators
+			//sum("ankit"[ise print na kare] 40,59,50 ise print kare); REST operator
+			function additon() {
+				console.log(arguments);
+				let sum = 0;
+				for (let i in arguments) {
+					sum += arguments[i];
+				}
+				document.write(additon);
+			}
+			additon(30, 40, 49);
+			additon(40, 50, 50);
+			additon(40, 40);
+		</script>
+	</body>
+</html>

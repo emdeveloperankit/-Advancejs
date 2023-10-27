@@ -1,0 +1,33 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is async function</title>
+	</head>
+	<body>
+		<h3>Async function</h3>
+		<button id="stop">stop</button>
+		<script>
+			setTimeout(function () {
+				console.log('Ankit');
+			}, 2000);
+			const sayAnkit = function color() {
+				console.log('Hii ankit');
+			};
+			setTimeout(sayAnkit, 20000);
+			//document.querySelector('h3').innerHTML = 'Code with ankit';
+
+			const changeText = function () {
+				document.querySelector('h3').innerHTML = 'Code with Ankit';
+			};
+			const changeMe = setTimeout(changeText, 2000);
+			//CLEAR TIMEOUT
+			//clearTimeout(changeMe);
+			document.querySelector('button').addEventListener('click', (even) => {
+				clearTimeout(changeMe);
+				console.log('Stopped');
+			});
+		</script>
+	</body>
+</html>
